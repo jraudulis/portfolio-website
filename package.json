@@ -1,8 +1,8 @@
 {
-  "name": "simplefolio",
-  "version": "1.0.1",
-  "private": "true",
-  "description": "A clean, beautiful and responsive portfolio template for Developers!",
+  "name": "portfolio",
+  "version": "1.0",
+  "private": true,
+  "description": "Juris Raudulis portfolio website",
   "source": "src/index.html",
   "scripts": {
     "start": "parcel",
@@ -13,11 +13,7 @@
     "url": "git+https://github.com/cobiwave/simplefolio"
   },
   "keywords": [],
-  "author": "Jacobo Martinez",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/cobiwave/simplefolio/issues"
-  },
+  "author": "Juris Raudulis",
   "homepage": "https://github.com/cobiwave/simplefolio#readme",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.2",

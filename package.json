@@ -3,18 +3,13 @@
   "version": "1.0",
   "private": true,
   "description": "Juris Raudulis portfolio website",
-  "source": "src/index.html",
+  "source": "index.html",
   "scripts": {
     "start": "parcel",
     "build": "parcel build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cobiwave/simplefolio"
-  },
   "keywords": [],
   "author": "Juris Raudulis",
-  "homepage": "https://github.com/cobiwave/simplefolio#readme",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.2",
     "parcel": "^2.8.2",

@@ -1,0 +1,19 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "portfolio web page",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jraudulis/portfolio-website.git"
+  },
+  "author": "Juris Raudulis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jraudulis/portfolio-website/issues"
+  },
+  "homepage": "https://github.com/jraudulis/portfolio-website#readme"
+}

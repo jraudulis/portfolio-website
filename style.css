@@ -8,6 +8,10 @@ body{
  box-sizing: border-box;
 }
 
+.box-shadow{
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
 #hero {
  min-height: 100vh;
  height: 100vh;
@@ -87,6 +91,7 @@ h1{
  display: flex;
  align-items: center;
  justify-content: space-evenly;
+ padding-bottom: 5rem;
 }
 
 .about-text{
@@ -177,6 +182,10 @@ h1{
 
 /*FOR LARGER PHONES*/
 @media(max-width: 767.98px) {
+  .section-title{
+    padding-top: 0;
+  }
+
  .about-text{
   width: 100%;
   text-align: center;

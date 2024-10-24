@@ -31,6 +31,10 @@ revealElements('.about-info',{
  origin: 'right'
 });
 
+revealElements('.picture',{
+ origin: 'left'
+});
+
 revealElements('.project-info-col',{
  origin: 'left'
 });

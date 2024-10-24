@@ -16,18 +16,26 @@ function revealElements (selector, options ={}){
 }
 
 revealElements('.load-hidden');
+
 revealElements('.button',{
  origin: 'bottom',
- delay: 700
+ delay: 900
 });
 
 revealElements('.section-title',{
  origin: 'bottom',
- distance: '10px',
- duration: 500,
+ duration: 500
 });
 
 revealElements('.about-info',{
+ origin: 'right'
+});
+
+revealElements('.project-info-col',{
+ origin: 'left'
+});
+
+revealElements('.project-img',{
  origin: 'right'
 });
 

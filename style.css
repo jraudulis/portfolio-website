@@ -8,6 +8,11 @@ body{
  box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 .box-shadow{
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
 }
@@ -122,6 +127,20 @@ h1{
  width: 40%;
  padding: 0.5rem;
  text-align: left;
+}
+
+.btn-live:hover{
+  color: white;
+  background-color: purple;
+  border-color: transparent;
+}
+
+.btn-source{
+  border: none;
+}
+
+.btn-source:hover{
+  padding-left: 20px;
 }
 
 .image-container{

@@ -1,14 +1,14 @@
 
 function revealElements (selector, options ={}){
   ScrollReveal().reveal(selector,{
-   distance: '100%',
-   duration: 1000,
+   distance: '10px',
+   duration: 700,
    easing: 'ease-in-out',
    origin: 'left',
    opacity: 0,
    scale: 1,
-   delay: 400,
-   interval: 800,
+   delay: 300,
+   interval: 500,
    viewFactor: 0.5,
    reset: false,
    ...options 
@@ -16,15 +16,16 @@ function revealElements (selector, options ={}){
 }
 
 revealElements('.load-hidden');
-
-revealElements('.button', {
+revealElements('.button',{
  origin: 'bottom',
- delay: 1500,
+ delay: 700
 });
+
+
 
 revealElements('.section-title',{
  origin: 'bottom',
- distance: '20%',
+ distance: '10px',
  duration: 500,
 });
 

@@ -21,8 +21,6 @@ revealElements('.button',{
  delay: 700
 });
 
-
-
 revealElements('.section-title',{
  origin: 'bottom',
  distance: '10px',

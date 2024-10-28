@@ -17,7 +17,7 @@ function revealElements (selector, options ={}){
 
 revealElements('.load-hidden');
 
-revealElements('.button',{
+revealElements('.button, .btn-resume, .btn-source',{
  origin: 'bottom',
  delay: 900
 });

@@ -43,13 +43,13 @@ h1{
 }
 
 .text-color-main{
- color: #932dcd;
+ color: #754FDC;
 }
 
 .button{
   height: 50px;
   width: 200px;
-  color: #932dcd;
+  color: #754FDC;
   font-size: 1rem;
   text-transform: uppercase;
   text-decoration: none;
@@ -57,7 +57,7 @@ h1{
   position: relative;
   background-color: transparent;
   cursor: pointer;
-  border: 2px solid #932dcd;
+  border: 2px solid #754FDC;
   overflow: hidden;
   border-radius: 1px;
   transition: background-color 0.3s ease-in-out;
@@ -70,7 +70,7 @@ h1{
   left: -100%;
   width: 100%;
   height: 100%;
-  background-color: #932dcd;
+  background-color: #754FDC;
   z-index: -1;
   transition: transform 0.4s ease;
   transform: translateX(0);
@@ -82,12 +82,12 @@ h1{
 
 .btn-hero:hover {
  color: white;
- background-color: #932dcd;
+ background-color: #754FDC;
 }
 
 #about{
  height: 100%;
- background-color: #932dcd;
+ background-color: #754FDC;
  color: white;
 }
 
@@ -104,15 +104,41 @@ h1{
 }
 
 .btn-resume{
- color: white;
- background-color: transparent;
- border: 2px solid white;
- transition: background-color 0.5s, color 0.5s;
+  height: 50px;
+  width: 200px;
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  background-color: transparent;
+  cursor: pointer;
+  border: 2px solid white;
+  overflow: hidden;
+  border-radius: 1px;
+  z-index: 1;
 }
 
-.btn-resume:hover {
- color: #932dcd;
- background-color: white;
+.btn-resume::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: -1;
+  transition: transform 0.4s ease;
+  transform: translateX(0);
+}
+
+.btn-resume:hover::before {
+  transform: translateX(100%);
+}
+
+.btn-resume:hover{
+  color: #754FDC;
 }
 
 .projects-wrapper{
@@ -133,13 +159,30 @@ h1{
 
 .btn-live:hover{
   color: white;
-  background-color: purple;
-  border-color: transparent;
 }
 
 .btn-source{
+  height: 50px;
+  width: 200px;
+  color: #754FDC;
+  background-color: transparent;
   border: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
   transition: 0.5s;
+}
+
+.btn-source::before {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: transform 0.4s ease;
+  transform: translateX(0);
 }
 
 .btn-source:hover{

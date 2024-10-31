@@ -43,3 +43,8 @@ revealElements('.project-img',{
  origin: 'right'
 });
 
+revealElements('.contacts-row',{
+ origin: 'bottom',
+ interval: 100
+});
+

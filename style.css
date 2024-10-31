@@ -143,12 +143,13 @@ h1{
 
 .projects-wrapper{
  display: flex;
- align-items: center;
+ flex-direction: column;
 }
 
 .row{
  display: flex;
  justify-content: center;
+ padding-top: 3rem;
 }
 
 .project-info-col{
@@ -187,11 +188,14 @@ h1{
 
 .btn-source:hover{
   padding-left: 20px;
+  cursor: pointer;
 }
 
 .image-container{
  width: 45%;
  height: auto;
+ display: flex;
+ align-items: center;
  padding: 0.5rem;
 }
 

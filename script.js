@@ -2,7 +2,7 @@
 function revealElements (selector, options ={}){
   ScrollReveal().reveal(selector,{
    distance: '10px',
-   duration: 700,
+   duration: 500,
    easing: 'ease-in-out',
    origin: 'left',
    opacity: 0,
@@ -17,30 +17,35 @@ function revealElements (selector, options ={}){
 
 revealElements('.load-hidden');
 
-revealElements('.button, .btn-resume, .btn-source',{
+revealElements('.btn-hero',{
  origin: 'bottom',
  delay: 900
 });
 
 revealElements('.section-title',{
  origin: 'bottom',
- duration: 500
+ viewFactor: 1
 });
 
-revealElements('.about-info',{
- origin: 'right'
+revealElements('.about-text',{
+ origin: 'right',
+ interval: 0
 });
 
 revealElements('.picture',{
- origin: 'left'
+ origin: 'left',
+ interval: 0
 });
 
 revealElements('.project-info-col',{
- origin: 'left'
+ origin: 'left',
+ interval: 0
 });
 
 revealElements('.project-img',{
- origin: 'right'
+ origin: 'right',
+ duration: 400,
+ delay: 800
 });
 
 revealElements('.contacts-row',{

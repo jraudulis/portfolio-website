@@ -4,7 +4,8 @@
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>Juris Raudulis</title>
-<script src="https://unpkg.com/scrollreveal"></script>
+ <script src="https://unpkg.com/scrollreveal"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
  <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -45,12 +46,28 @@
   <div class="container">
    <h2 class="section-title">Projects</h2>
    <div class="projects-wrapper">
+    <!-- Music player Project -->
+<div class="row">
+  <div class="project-info-col">
+   <h3>Music PLayer</h3>
+   <p>In development stage...
+   </p>
+   <button onclick="location.href='https://jraudulis.github.io/music-player/'" class="button btn-live">See live</button>
+   <button onclick="location.href='https://github.com/jraudulis/music-player'" class="btn-source">Source code</button>
+  </div>
+  <div class="image-container">
+   <img alt="project picture" class="img-fluid box-shadow project-img"  src="assets/mscplayer.png">
+  </div>
+ </div>
+<!-- End Music player Project -->
+
 <!-- Face Recognition Project -->
     <div class="row">
      <div class="project-info-col">
       <h3>Face Recognition</h3>
-      <p>This full-stack application is built with React on the front end, Node.js on the back end, and PostgreSQL as the database. Users can input an image URL, which triggers an API call to Clarifai’s face recognition AI model. The model processes the image, detects any human faces, and highlights them, creating an intuitive and interactive experience for visual face detection. While the database is currently offline due to a hosting plan expiration, the full front-end and back-end code are available on my GitHub profile for review.
-      </p>
+      <p>Currently not fully working due to server hosting costs but full front-end and backend codes are avaliable on github profile</p>
+      <!-- <p>This full-stack application is built with React on the front end, Node.js on the back end, and PostgreSQL as the database. Users can input an image URL, which triggers an API call to Clarifai’s face recognition AI model. The model processes the image, detects any human faces, and highlights them, creating an intuitive and interactive experience for visual face detection. While the database is currently offline due to a hosting plan expiration, the full front-end and back-end code are available on my GitHub profile for review.
+      </p> -->
       <button onclick="location.href='https://face-recognition-qyo3.onrender.com'" class="button btn-live">See live</button>
       <button onclick="location.href='https://github.com/jraudulis/face-recognition'" class="btn-source">Source code</button>
      </div>
@@ -59,6 +76,36 @@
      </div>
     </div>
 <!-- End Face Recognition Project -->
+
+<!-- Joke teller Project -->
+<div class="row">
+  <div class="project-info-col">
+   <h3>Joke Teller</h3>
+   <p>Minimalistic design joke teller made with HTML, CSS3, and JavaScript. It fetches text-based jokes and turns them in to audio output using text to voice API by using async/await, with interactive features powered by event listeners and DOM updates.
+   </p>
+   <button onclick="location.href='https://jraudulis.github.io/joke-teller/'" class="button btn-live">See live</button>
+   <button onclick="location.href='https://github.com/jraudulis/joke-teller'" class="btn-source">Source code</button>
+  </div>
+  <div class="image-container">
+   <img alt="project picture" class="img-fluid box-shadow project-img"  src="assets/jkteller.png">
+  </div>
+ </div>
+<!-- End Joke teller Project -->
+
+<!-- Quote generator Project -->
+<div class="row">
+  <div class="project-info-col">
+   <h3>Quote Generator</h3>
+   <p>A clean and simple quote generator made with HTML, CSS3, and JavaScript. It fetches jokes and quotes using async/await, with interactive features powered by event listeners and DOM updates.
+   </p>
+   <button onclick="location.href='https://jraudulis.github.io/quote-generator/'" class="button btn-live">See live</button>
+   <button onclick="location.href='https://github.com/jraudulis/quote-generator'" class="btn-source">Source code</button>
+  </div>
+  <div class="image-container">
+   <img alt="project picture" class="img-fluid box-shadow project-img"  src="assets/qtgen.png">
+  </div>
+ </div>
+<!-- End Quote generator Project -->
 
 <!-- Space Station Tracker Project -->
     <div class="row">
@@ -119,9 +166,9 @@
      <div class="contacts-row"><p class="contacts-text">juris.raudulis@outlook.com</p>
      </div>
      <div class="contacts-row"><a href="https://www.linkedin.com/in/juris-raudulis/">
-      <img alt="linkedin-icon" height="50px" width="50px" src="assets/linkedin.png"></a>
+      <i class="fas fa-brands fa-linkedin"></i></a>
      </div>
-     <div class="contacts-row"><a href="https://github.com/jraudulis"><img alt="github-icon" height="50px" width="50px" src="assets/github.png"></a>
+     <div class="contacts-row"><a href="https://github.com/jraudulis"><i class="fas fa-brands fa-github"></i></a>
      </div>
     </div>
   </div>

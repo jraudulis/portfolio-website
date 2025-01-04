@@ -222,7 +222,24 @@ h1{
 .contacts-text{
  font-size: 1.2rem;
  font-weight: 800;
+ cursor: default;
 }
+
+.contacts-text:hover {
+  color: #754FDC;
+  cursor: text;
+}
+
+.fas {
+  color: black;
+  font-size: 3rem;
+}
+
+.fas:hover {
+  color:#754FDC;
+}
+
+
 
 /*MEDIA QUERIES*/
 

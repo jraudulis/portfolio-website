@@ -1,214 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Juris Raudulis</title>
- <script src="https://unpkg.com/scrollreveal"></script>
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
- <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Juris Raudulis - Web Developer Portfolio showcasing front-end and full-stack projects">
+  <meta name="keywords" content="web developer, portfolio, front-end, full-stack, react, javascript">
+  <title>Juris Raudulis | Web Developer Portfolio</title>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
+  <!-- Header with Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="container nav-container">
+        <div class="nav-logo">JR</div>
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#tech-stack" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode">
+          <i class="fas fa-moon"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
 
   <!-- Main page/ Hero section -->
- <section id="hero">
-  <div class="container">
-   <h1 class="hero-title load-hidden">
-     Hi, my name is <span class="text-color-main">Juris Raudulis</span>
-     <br />
-     Developer with an eye for design.
-   </h1>
-   <button onclick="location.href='#about'" class="button btn-hero">See more</button>
- </div>
- </section>
- <!-- End Of Main page/ Hero section -->
+  <section id="hero">
+    <div class="container">
+      <h1 class="hero-title load-hidden">
+        Hi, my name is <span class="text-color-main">Juris Raudulis</span>
+        <br />
+        Developer with an eye for design.
+      </h1>
+      <button onclick="location.href='#about'" class="button btn-hero" aria-label="Navigate to About section">
+        See more
+      </button>
+    </div>
+  </section>
+  <!-- End Of Main page/ Hero section -->
 
-<!-- About me section -->
- <section id="about">
-  <div class="container container-about">
-   <div class="about-wrapper">
-    <div class="my-picture">
-     <img alt="picture of me" class="picture box-shadow" height="auto" width="250px" src="assets/me.jpg">
+  <!-- About me section -->
+  <section id="about">
+    <div class="container">
+      <div class="about-wrapper">
+        <div class="my-picture">
+          <img alt="Portrait of Juris Raudulis" class="picture box-shadow" height="auto" width="250" src="assets/me.jpg">
+        </div>
+        <div class="about-text">
+          <h2 id="about-title">About me</h2>
+          <p class="about-info">I am web development and digital media college graduate who is looking for an opportunity to start a new career path in the industry. Web development and everything related with design is my passion. This passion started when I first visited Defected Records web site and immediately got captivated by it. I knew from then on that I would love to be able to create something so beautiful too.</p>
+          <p class="about-info">After graduating from college and laying strong foundation, I have kept myself on the self improvement path and in my free time off from work I keep working towards my goal which is to become a full stack developer. Thank you for visiting.</p>
+          <button onclick="window.open('assets/resume.pdf', '_blank')" class="btn-resume" aria-label="View Resume">View Resume</button>
+        </div>
+      </div>
     </div>
-    <div class="about-text">
-     <h2 id="about-title">About me</h2>
-     <p class="about-info">I am web developement and digital media college graduate who is looking for an opportunity to start a new career path in the industry. Web developement and everything related with design is my passion. This passion started when I first visited Defected Records web site and immediately got captivated by it. I knew from then on that I would love to be able to create something so beautiful too.</p>
-     <p class="about-info">After graduating from college and laying strong foundation, I have kept myself on the self improvement path and in my free time off from work I keep working towards my goal which is to become a full stack developer. Thank you for visiting.</p>
-     <button onclick="window.open('assets/resume.pdf', '_blank')" class="btn-resume">View Resume</button>
-    </div>
-   </div>
-  </div>
- </section>
-<!-- End Of About me section -->
- <!-- Tech stack section -->
+  </section>
+  <!-- End Of About me section -->
+
+  <!-- Tech stack section -->
   <section id="tech-stack">
     <div class="container">
-    <h2 class="section-title">Technolgies i work with</h2>
-  </div>
+      <h2 class="section-title">Technologies I work with</h2>
+    </div>
     <div class="techstack-container">
-      <div class="techstack-icon-wrapper">
-        <i class="fas fa-brands fa-html5"></i>
-        <h3 class="tech-icon-names">html</h3>
+      <div class="techstack-icon-wrapper" data-technology="HTML">
+        <i class="fas fa-brands fa-html5" aria-hidden="true"></i>
+        <h3 class="tech-icon-names">HTML</h3>
         <h3 class="years">5 years</h3>
       </div>
-      <div class="techstack-icon-wrapper">
-      <i class="fas fa-brands fa-css"></i>
-      <h3 class="tech-icon-names">css</h3>
-      <h3 class="years">5 years</h3>
+      <div class="techstack-icon-wrapper" data-technology="CSS">
+        <i class="fas fa-brands fa-css3-alt" aria-hidden="true"></i>
+        <h3 class="tech-icon-names">CSS</h3>
+        <h3 class="years">5 years</h3>
       </div>
-      <div class="techstack-icon-wrapper">
-        <i class="fas fa-brands fa-js"></i>
+      <div class="techstack-icon-wrapper" data-technology="JavaScript">
+        <i class="fas fa-brands fa-js" aria-hidden="true"></i>
         <h3 class="tech-icon-names">JavaScript</h3>
         <h3 class="years">3 years</h3>
       </div>
-      <div class="techstack-icon-wrapper">
-        <i class="fas fa-brands fa-react"></i>
+      <div class="techstack-icon-wrapper" data-technology="React">
+        <i class="fas fa-brands fa-react" aria-hidden="true"></i>
         <h3 class="tech-icon-names">React</h3>
         <h3 class="years">1 year</h3>
       </div>
-      <div class="techstack-icon-wrapper">
-        <i class="fas fa-brands fa-node"></i>
+      <div class="techstack-icon-wrapper" data-technology="Node.js">
+        <i class="fas fa-brands fa-node" aria-hidden="true"></i>
         <h3 class="tech-icon-names">Node.js</h3>
         <h3 class="years">1 year</h3>
       </div>
     </div>
   </section>
- <!-- End of Tech stack section -->
+  <!-- End of Tech stack section -->
 
-<!-- Projects section -->
- <section id="projects">
-  <div class="container">
-   <h2 class="section-title">Some of my projects</h2>
-   <div class="projects-wrapper">
-    <!-- Music player Project -->
-<div class="row">
-  <div class="project-info-col">
-   <h3>Music PLayer</h3>
-   <p>In development stage...
-   </p>
-   <button onclick="location.href='https://jraudulis.github.io/music-player/'" class="button btn-live">See live</button>
-   <button onclick="location.href='https://github.com/jraudulis/music-player'" class="btn-source">Source code</button>
-  </div>
-  <div class="image-container">
-   <img alt="project picture" class="img-fluid box-shadow project-img"  src="assets/mscplayer.png">
-  </div>
- </div>
-<!-- End Music player Project -->
+  <!-- Projects section -->
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title">Some of my projects</h2>
+      <div class="project-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="javascript">JavaScript</button>
+        <button class="filter-btn" data-filter="react">React</button>
+        <button class="filter-btn" data-filter="api">API</button>
+      </div>
+      <div class="projects-wrapper">
+        <!-- Music player Project -->
+        <article class="row project-card" data-category="javascript">
+          <div class="project-info-col">
+            <h3>Music Player</h3>
+            <p>In development stage...</p>
+            <div class="project-links">
+              <a href="https://jraudulis.github.io/music-player/" class="button btn-live" aria-label="See Music Player live demo">See live</a>
+              <a href="https://github.com/jraudulis/music-player" class="btn-source" aria-label="View Music Player source code">Source code</a>
+            </div>
+          </div>
+          <div class="image-container">
+            <img alt="Music Player application screenshot" class="img-fluid box-shadow project-img" loading="lazy" src="assets/mscplayer.png">
+          </div>
+        </article>
+        <!-- End Music player Project -->
 
-<!-- Face Recognition Project -->
-    <div class="row">
-     <div class="project-info-col">
-      <h3>Face Recognition</h3>
-      <p>Currently not fully working due to server hosting costs but full front-end and backend codes are avaliable on github profile</p>
-      <!-- <p>This full-stack application is built with React on the front end, Node.js on the back end, and PostgreSQL as the database. Users can input an image URL, which triggers an API call to Clarifai’s face recognition AI model. The model processes the image, detects any human faces, and highlights them, creating an intuitive and interactive experience for visual face detection. While the database is currently offline due to a hosting plan expiration, the full front-end and back-end code are available on my GitHub profile for review.
-      </p> -->
-      <button onclick="location.href='https://face-recognition-qyo3.onrender.com'" class="button btn-live">See live</button>
-      <button onclick="location.href='https://github.com/jraudulis/face-recognition'" class="btn-source">Source code</button>
-     </div>
-     <div class="image-container">
-      <img alt="project picture" class="img-fluid box-shadow project-img"  src="assets/facerec.png">
-     </div>
+        <!-- Face Recognition Project -->
+        <article class="row project-card" data-category="react api">
+          <div class="project-info-col">
+            <h3>Face Recognition</h3>
+            <p>This full-stack application is built with React on the front end, Node.js on the back end, and PostgreSQL as the database. Users can input an image URL, which triggers an API call to Clarifai's face recognition AI model. The model processes the image, detects any human faces, and highlights them, creating an intuitive and interactive experience for visual face detection.</p>
+            <div class="project-links">
+              <a href="https://face-recognition-qyo3.onrender.com" class="button btn-live" aria-label="See Face Recognition live demo">See live</a>
+              <a href="https://github.com/jraudulis/face-recognition" class="btn-source" aria-label="View Face Recognition source code">Source code</a>
+            </div>
+          </div>
+          <div class="image-container">
+            <img alt="Face Recognition application screenshot showing face detection functionality" class="img-fluid box-shadow project-img" loading="lazy" src="assets/facerec.png">
+          </div>
+        </article>
+        <!-- End Face Recognition Project -->
+
+        <!-- Joke teller Project -->
+        <article class="row project-card" data-category="javascript api">
+          <div class="project-info-col">
+            <h3>Joke Teller</h3>
+            <p>Minimalistic design joke teller made with HTML, CSS3, and JavaScript. It fetches text-based jokes and turns them in to audio output using text to voice API by using async/await, with interactive features powered by event listeners and DOM updates.</p>
+            <div class="project-links">
+              <a href="https://jraudulis.github.io/joke-teller/" class="button btn-live" aria-label="See Joke Teller live demo">See live</a>
+              <a href="https://github.com/jraudulis/joke-teller" class="btn-source" aria-label="View Joke Teller source code">Source code</a>
+            </div>
+          </div>
+          <div class="image-container">
+            <img alt="Joke Teller application interface showing a robot that tells jokes" class="img-fluid box-shadow project-img" loading="lazy" src="assets/jkteller.png">
+          </div>
+        </article>
+        <!-- End Joke teller Project -->
+
+        <!-- Space Station Tracker Project -->
+        <article class="row project-card" data-category="javascript api">
+          <div class="project-info-col">
+            <h3>Space Station Tracker</h3>
+            <p>This project, developed with HTML, CSS, and JavaScript, tracks the real-time location of the International Space Station (ISS) on a dynamic map. The application fetches data from an API, processes the JSON response, and updates the map and marker with the received coordinates to display the ISS's current position. This was my first experience with API calls, and I found it exciting to create an interactive, real-time space-tracking application.</p>
+            <div class="project-links">
+              <a href="https://jraudulis.github.io/space-station-tracker/" class="button btn-live" aria-label="See Space Station Tracker live demo">See live</a>
+              <a href="https://github.com/jraudulis/space-station-tracker" class="btn-source" aria-label="View Space Station Tracker source code">Source code</a>
+            </div>
+          </div>
+          <div class="image-container">
+            <img alt="Space Station Tracker application showing ISS position on a world map" class="img-fluid box-shadow project-img" loading="lazy" src="assets/spacestat.png">
+          </div>
+        </article>
+        <!-- End of Space Station Tracker Project -->
+
+        <!-- Gradient Color Generator Project -->
+        <article class="row project-card" data-category="javascript">
+          <div class="project-info-col">
+            <h3>Gradient Color Generator</h3>
+            <p>This application, built with HTML, CSS, and JavaScript, creates a customizable gradient background effect based on two user-selected colors. Users can input their desired colors, which dynamically update the page's background with a smooth gradient transition. The chosen color codes are displayed on-screen, allowing users to easily copy and apply them in their own projects.</p>
+            <div class="project-links">
+              <a href="https://jraudulis.github.io/background-generator/" class="button btn-live" aria-label="See Gradient Color Generator live demo">See live</a>
+              <a href="https://github.com/jraudulis/background-generator" class="btn-source" aria-label="View Gradient Color Generator source code">Source code</a>
+            </div>
+          </div>
+          <div class="image-container">
+            <img alt="Gradient Color Generator application interface with color pickers" class="img-fluid box-shadow project-img" loading="lazy" src="assets/bckg.png">
+          </div>
+        </article>
+        <!-- End of Gradient Color Generator Project -->
+
+      </div>
     </div>
-<!-- End Face Recognition Project -->
+  </section>
+  <!-- End Of Projects section -->
 
-<!-- Joke teller Project -->
-<div class="row">
-  <div class="project-info-col">
-   <h3>Joke Teller</h3>
-   <p>Minimalistic design joke teller made with HTML, CSS3, and JavaScript. It fetches text-based jokes and turns them in to audio output using text to voice API by using async/await, with interactive features powered by event listeners and DOM updates.
-   </p>
-   <button onclick="location.href='https://jraudulis.github.io/joke-teller/'" class="button btn-live">See live</button>
-   <button onclick="location.href='https://github.com/jraudulis/joke-teller'" class="btn-source">Source code</button>
-  </div>
-  <div class="image-container">
-   <img alt="project picture" class="img-fluid box-shadow project-img"  src="assets/jkteller.png">
-  </div>
- </div>
-<!-- End Joke teller Project -->
-
-<!-- Quote generator Project -->
-<div class="row">
-  <div class="project-info-col">
-   <h3>Quote Generator</h3>
-   <p>A clean and simple quote generator made with HTML, CSS3, and JavaScript. It fetches jokes and quotes using async/await, with interactive features powered by event listeners and DOM updates.
-   </p>
-   <button onclick="location.href='https://jraudulis.github.io/quote-generator/'" class="button btn-live">See live</button>
-   <button onclick="location.href='https://github.com/jraudulis/quote-generator'" class="btn-source">Source code</button>
-  </div>
-  <div class="image-container">
-   <img alt="project picture" class="img-fluid box-shadow project-img"  src="assets/qtgen.png">
-  </div>
- </div>
-<!-- End Quote generator Project -->
-
-<!-- Space Station Tracker Project -->
-    <div class="row">
-     <div class="project-info-col">
-      <h3>Space Station Tracker</h3>
-      <p>This project, developed with HTML, CSS, and JavaScript, tracks the real-time location of the International Space Station (ISS) on a dynamic map. The application fetches data from an API, processes the JSON response, and updates the map and marker with the received coordinates to display the ISS's current position. This was my first experience with API calls, and I found it exciting to create an interactive, real-time space-tracking application.
-      </p>
-      <button onclick="location.href='https://jraudulis.github.io/space-station-tracker/'" class="button btn-live">See live</button>
-      <button onclick="location.href='https://github.com/jraudulis/space-station-tracker'" class="btn-source">Source code</button>
-     </div>
-     <div class="image-container">
-      <img alt="project picture" class="img-fluid box-shadow project-img"  src="assets/spacestat.png">
-     </div>
+  <!-- Contacts section -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <div class="contacts-row">
+            <i class="fas fa-phone contact-icon" aria-hidden="true"></i>
+            <p class="contacts-text">+447557517704</p>
+          </div>
+          <div class="contacts-row">
+            <i class="fas fa-envelope contact-icon" aria-hidden="true"></i>
+            <p class="contacts-text">juris.raudulis@outlook.com</p>
+          </div>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/juris-raudulis/" aria-label="LinkedIn Profile" class="social-link">
+              <i class="fas fa-brands fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="https://github.com/jraudulis" aria-label="GitHub Profile" class="social-link">
+              <i class="fas fa-brands fa-github" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <form id="contact-form" class="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="button btn-submit">Send Message</button>
+        </form>
+      </div>
     </div>
-    <!-- End of Space Station Tracker Project -->
+  </section>
+  <!-- End Of Contacts section -->
 
-<!-- Gradient Color Generator Project -->
-    <div class="row">
-     <div class="project-info-col">
-      <h3>Gradient Color Generator</h3>
-      <p>This application, built with HTML, CSS, and JavaScript, creates a customizable gradient background effect based on two user-selected colors. Users can input their desired colors, which dynamically update the page’s background with a smooth gradient transition. The chosen color codes are displayed on-screen, allowing users to easily copy and apply them in their own projects.
-      </p>
-      <button onclick="location.href='https://jraudulis.github.io/background-generator/'" class="button btn-live">See live</button>
-      <button onclick="location.href='https://github.com/jraudulis/background-generator'" class="btn-source">Source code</button>
-     </div>
-     <div class="image-container">
-      <img alt="project picture" class="img-fluid box-shadow project-img"  src="assets/bckg.png">
-     </div>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2025 Juris Raudulis. All rights reserved.</p>
+      <p>Designed and built with ❤️</p>
     </div>
-<!-- End of Gradient Color Generator Project -->
+  </footer>
+  <!-- End of Footer -->
 
-<!-- Simple To Do List Project -->
-    <div class="row">
-     <div class="project-info-col">
-      <h3>Simple To Do List</h3>
-      <p>This is a simple, functional to-do list application built with minimal HTML, CSS, and JavaScript. Developed as a practice project, it allows users to add tasks to a list, mark them as completed, or remove them as needed. Each task is managed with intuitive buttons, making it easy to keep track of to-do items and maintain an organized workflow.
-      </p>
-      <button onclick="location.href='https://jraudulis.github.io/Simple-to-do-list/'" class="button btn-live">See live</button>
-      <button onclick="location.href='https://github.com/jraudulis/Simple-to-do-list'" class="btn-source">Source code</button>
-     </div>
-     <div class="image-container">
-      <img alt="project picture" class="img-fluid box-shadow project-img"  src="assets/todolist.png">
-     </div>
-    </div>
-    <!-- End Of Simple To Do List Project -->
-   </div>
-  </div>
- </section>
-<!-- End Of Projects section -->
+  <!-- Back to top button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up" aria-hidden="true"></i>
+  </button>
 
-<!-- Contacts section -->
- <section id="contact">
-  <div class="container">
-   <h2 class="section-title">Contact</h2>
-    <div class="contacts-wrapper">
-     <div class="contacts-row"><p class="contacts-text">+447557517704</p>
-     </div>
-     <div class="contacts-row"><p class="contacts-text">juris.raudulis@outlook.com</p>
-     </div>
-     <div class="contacts-row"><a href="https://www.linkedin.com/in/juris-raudulis/">
-      <i class="fas fa-brands fa-linkedin"></i></a>
-     </div>
-     <div class="contacts-row"><a href="https://github.com/jraudulis"><i class="fas fa-brands fa-github"></i></a>
-     </div>
-    </div>
-  </div>
- </section>
- <!-- End Of Contacts section -->
-
- <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

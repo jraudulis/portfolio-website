@@ -1,4 +1,6 @@
 const techIconWrappers = document.querySelectorAll('.techstack-icon-wrapper');
+const heroBtn = document.querySelector('.btn-hero');
+const headingColor = document.querySelector('.text-color-main');
 
 techIconWrappers.forEach(wrapper => {
   const techIcon = wrapper.querySelector('.fas'); 
@@ -17,6 +19,17 @@ techIconWrappers.forEach(wrapper => {
   wrapper.addEventListener('mouseover', changeColor);
   wrapper.addEventListener('mouseout', resetColor);
 });
+
+function changeHeadingColor() {
+  headingColor.style.color = '#A5D6A7'
+}
+
+function resetHeadingColor() {
+  headingColor.style.color = '#5C6BC0'
+}
+
+heroBtn.addEventListener('mouseover', changeHeadingColor);
+heroBtn.addEventListener('mouseout', resetHeadingColor);
 
 
 
@@ -77,7 +90,7 @@ revealElements('.project-info-col',{
  interval: 0
 });
 
-revealElements('.project-img',{
+revealElements('.image-container',{
  origin: 'right',
  duration: 400,
  delay: 800

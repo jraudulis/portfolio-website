@@ -31,16 +31,6 @@
   --container-padding: 0 5rem;
 }
 
-/* Light theme variables */
-:root[data-theme="light"] {
-  --primary-color: #3F51B5;
-  --secondary-color: #66BB6A;
-  --dark-bg: #F5F5F5;
-  --medium-bg: #E0E0E0;
-  --text-color: #333333;
-  --text-highlight: #212121;
-}
-
 /* Global Styles */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -180,19 +170,6 @@ p {
   width: 100%;
 }
 
-.theme-toggle {
-  background: none;
-  border: none;
-  color: var(--text-color);
-  font-size: 1.2rem;
-  cursor: pointer;
-  transition: transform var(--transition-fast);
-}
-
-.theme-toggle:hover {
-  transform: rotate(15deg);
-}
-
 /* Buttons */
 .button {
   height: 50px;
@@ -214,7 +191,7 @@ p {
 
 .button:hover, .button:focus {
   background-color: var(--secondary-color);
-  color: var(--dark-bg);
+  color: var(--medium-bg);
   transform: translateY(-3px);
 }
 
@@ -292,7 +269,6 @@ p {
   border-radius: 50%;
   display: flex;
   justify-content: center;
-  align-items: center;
   cursor: pointer;
   opacity: 0;
   visibility: hidden;
@@ -308,6 +284,10 @@ p {
 .back-to-top:hover {
   background-color: var(--secondary-color);
   transform: translateY(-3px);
+}
+
+.fa-arrow-up:hover {
+  color: var(--medium-bg);
 }
 
 /* Hero Section */
@@ -685,9 +665,6 @@ footer p {
 }
 
 @media screen and (max-width: 768px) {
-  :root {
-    --container-padding: 0 1.5rem;
-  }
   
   h1 {
     font-size: 2.5rem;
@@ -697,34 +674,20 @@ footer p {
     font-size: 2.2rem;
   }
   
-  .nav-links {
+  nav {
     display: none;
   }
-  
-  /* Add basic mobile menu functionality */
-  .nav-container {
-    position: relative;
-  }
-  
-  .nav-container::after {
-    content: '\f0c9';
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
-    font-size: 1.5rem;
-    color: var(--text-color);
-    cursor: pointer;
-  }
-  
-  /* Mobile menu toggle functionality would require JavaScript */
+ 
 }
 
 @media screen and (max-width: 576px) {
-  :root {
-    --container-padding: 0 1rem;
-  }
   
   h1 {
     font-size: 2rem;
+  }
+
+  #hero{
+    text-align: center;
   }
   
   .section-title, #about-title {
@@ -746,7 +709,12 @@ footer p {
     width: 40px;
     height: 40px;
   }
+
+  .fa-arrow-up{
+    font-size: 2rem !important;
+  }
 }
+/* End of media queries */
 
 /* Additional hover effects for project cards */
 .project-card {

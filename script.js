@@ -3,10 +3,17 @@ const themeToggle = document.getElementById('theme-toggle');
 const backToTopBtn = document.getElementById('back-to-top');
 const navLinks = document.querySelectorAll('.nav-link');
 const contactForm = document.getElementById('contact-form');
+const emailBtn = document.querySelector('.email-btn');
+const emailIcon = document.querySelector('.email-link');
 const filterBtns = document.querySelectorAll('.filter-btn');
 const projectCards = document.querySelectorAll('.project-card');
 const navbar = document.querySelector('.navbar');
 
+
+// Open email on button click
+function openEmail () {
+  window.location.href = "mailto:jraudulis@gmail.com?subject=Hello&body=Your message here!";
+}
 
 // Back to top button functionality
 function toggleBackToTopButton() {
@@ -72,41 +79,6 @@ function filterProjects(category) {
   });
 }
 
-// Contact form submission
-function handleFormSubmit(e) {
-  e.preventDefault();
-  
-  // Get form data
-  const name = document.getElementById('name').value;
-  const email = document.getElementById('email').value;
-  const message = document.getElementById('message').value;
-  
-  // Add loading state to submit button
-  const submitBtn = contactForm.querySelector('.btn-submit');
-  submitBtn.classList.add('loading');
-  
-  // Simulate form submission (in real implementation, you would send data to server)
-  setTimeout(() => {
-    // Remove loading state
-    submitBtn.classList.remove('loading');
-    
-    // Show success message
-    let successMessage = document.querySelector('.form-success-message');
-    if (!successMessage) {
-      successMessage = document.createElement('div');
-      successMessage.className = 'form-success-message';
-      successMessage.textContent = `Thank you ${name}! Your message has been sent successfully.`;
-      contactForm.appendChild(successMessage);
-    }
-    successMessage.classList.add('visible');
-    contactForm.reset(); 
-    // Hide success message after 5 seconds
-    setTimeout(() => {
-      successMessage.classList.remove('visible');
-    }, 5000);
-  }, 1500);
-}
-
 // Navbar scroll effect
 function handleNavbarScroll() {
   if (window.scrollY > 50) {
@@ -140,7 +112,7 @@ techIconWrappers.forEach(wrapper => {
   wrapper.addEventListener('mouseover', changeColor);
   wrapper.addEventListener('mouseout', resetColor);
 });
-
+// Hover effect for hero heading
 function changeHeadingColor() {
   headingColor.style.color = '#A5D6A7'
 }
@@ -151,6 +123,8 @@ function resetHeadingColor() {
 
 heroBtn.addEventListener('mouseover', changeHeadingColor);
 heroBtn.addEventListener('mouseout', resetHeadingColor);
+emailBtn.addEventListener('click', openEmail);
+emailIcon.addEventListener('click', openEmail);
 
 // Scroll animation functionality
 function revealElements(selector, options = {}) {
@@ -233,7 +207,6 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', toggleBackToTopButton);
   window.addEventListener('scroll', setActiveNavLink);
   window.addEventListener('scroll', handleNavbarScroll);
-  contactForm.addEventListener('submit', handleFormSubmit);
   
   // Project filtering
   filterBtns.forEach(btn => {

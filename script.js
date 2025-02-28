@@ -71,10 +71,10 @@ techIconWrappers.forEach(wrapper => {
   const techIcon = wrapper.querySelector('.fas'); 
   const techIconText = wrapper.querySelector('.tech-icon-names');
   wrapper.addEventListener('mouseover', () => {
-    techIcon.style.filter = techIconText.style.filter = 'brightness(80%)';
+    techIcon.style.color = techIconText.style.color = '#5C6BC0';
   });
   wrapper.addEventListener('mouseout', () => {
-    techIcon.style.filter = techIconText.style.filter = 'brightness(100%)';
+    techIcon.style.color = techIconText.style.color = '#F5F5F5';
   });
 });
 
